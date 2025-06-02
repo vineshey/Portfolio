@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-lightBg dark:bg-darkBg text-gray-900 dark:text-white transition-colors duration-300;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-full font-semibold text-white bg-neon hover:bg-green-600 transition-colors duration-300;
+}
+html {
+  scroll-behavior: smooth;
+}
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+@keyframes rainbow-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.rainbow-animated-border {
+  background: linear-gradient(90deg, #ff0080, #7928ca, #007cf0, #00dfd8, #ff0080);
+  background-size: 300% 300%;
+  animation: rainbow-move 3s linear infinite;
+  padding: 2px;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px 2px rgba(255,0,128,0.2), 0 0 24px 4px rgba(0,124,240,0.1);
+}
