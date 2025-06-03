@@ -25,7 +25,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

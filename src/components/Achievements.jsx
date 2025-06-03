@@ -41,7 +41,7 @@ const Achievements = () => {
           Achievements
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}
@@ -56,21 +56,20 @@ const Achievements = () => {
                   certFile={achievement.flipDetails.certFile}
                   linkedinLink={achievement.flipDetails.linkedinLink}
                   icon={achievement.icon}
-                  // No need to pass gradient, handled in FlipCard
                 />
               ) : (
                 <div className="card flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-gray-800 shadow-md">
                   <span
-                    className="inline-flex items-center justify-center w-16 h-16 rounded-full text-4xl shadow-lg"
+                    className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full text-3xl sm:text-4xl shadow-lg"
                     style={{
-                      background: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)" // orange-yellow gradient
+                      background: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)"
                     }}
                   >
                     {achievement.icon}
                   </span>
                   <div>
-                    <h3 className="text-xl font-semibold">{achievement.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-300">{achievement.description}</p>
+                    <h3 className="text-lg sm:text-xl font-semibold">{achievement.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">{achievement.description}</p>
                   </div>
                 </div>
               )}

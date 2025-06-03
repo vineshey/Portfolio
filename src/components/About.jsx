@@ -21,11 +21,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Profile Photo */}
         <div className="flex justify-center mb-6">
-          <img
-            src="/me.jpg" // Direct path from public folder
-            alt="Vinesh V"
-            className="w-33 h-33 rounded-full object-cover border-4 border-neon shadow-lg"
-          />
+         <img
+  src="/me.jpg"
+  alt="Vinesh V"
+  className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-neon shadow-lg"
+/>
         </div>
         <motion.h2
           initial={{ opacity: 0 }}
@@ -46,14 +46,14 @@ const About = () => {
           project and creator of an IoT water monitoring & cleaning system. Currently serving as
           Treasurer at ELACSTA and Secretary of IEEE SIGHT.
         </motion.p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
           {skills.map((skill, index) => (
             <motion.span
               key={index}
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="px-4 py-2 bg-neon text-white rounded-full"
+              className="px-4 py-2 bg-neon text-white rounded-full text-sm sm:text-base"
             >
               {skill}
             </motion.span>

@@ -1,5 +1,3 @@
-// This is the complete and fully integrated App component for your portfolio
-
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -9,13 +7,12 @@ import Achievements from "./components/Achievements";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 
-// ...existing code...
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Navbar />
       <motion.div
-        className="pt-16" // Add this line (adjust 16 to your Navbar height)
+        className="pt-16 px-2 sm:px-4 md:px-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -30,5 +27,5 @@ function App() {
     </div>
   );
 }
-// ...existing code...
+
 export default App;

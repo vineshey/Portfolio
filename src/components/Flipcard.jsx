@@ -6,7 +6,7 @@ const FlipCard = ({ title, description, certFile, linkedinLink, icon }) => {
 
   return (
     <div
-      className="relative h-64 perspective cursor-pointer"
+      className="relative h-64 sm:h-72 perspective cursor-pointer"
       onClick={() => setFlipped(!flipped)}
     >
       <motion.div
@@ -19,7 +19,7 @@ const FlipCard = ({ title, description, certFile, linkedinLink, icon }) => {
         <div
           className="absolute w-full h-full p-6 rounded-2xl backface-hidden flex flex-col justify-center items-center"
           style={{
-            background: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)" // orange-yellow gradient
+            background: "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)"
           }}
         >
           <div className="mb-4">
@@ -29,19 +29,19 @@ const FlipCard = ({ title, description, certFile, linkedinLink, icon }) => {
               {icon}
             </span>
           </div>
-          <h3 className="text-xl font-semibold text-center text-gray-900">{title}</h3>
-          <p className="text-gray-700 mt-2 text-center font-medium">Click to flip</p>
+          <h3 className="text-lg sm:text-xl font-semibold text-center text-gray-900">{title}</h3>
+          <p className="text-gray-700 mt-2 text-center font-medium text-sm sm:text-base">Click to flip</p>
         </div>
 
         {/* Back */}
         <div className="absolute w-full h-full bg-gradient-to-br from-purple-300 to-blue-300 dark:from-gray-700 dark:to-gray-900 text-white p-6 rounded-2xl transform rotate-y-180 backface-hidden flex flex-col justify-between">
-          <p className="text-sm leading-relaxed mb-4">{description}</p>
-          <div className="flex justify-between items-center gap-2">
+          <p className="text-sm sm:text-base leading-relaxed mb-4">{description}</p>
+          <div className="flex justify-between items-center gap-2 flex-wrap">
             <a
               href={linkedinLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gradient-to-r from-indigo-400 to-blue-500 px-4 py-1 text-sm font-medium hover:brightness-110"
+              className="rounded-full bg-gradient-to-r from-indigo-400 to-blue-500 px-4 py-1 text-sm font-medium hover:brightness-110 mb-2 sm:mb-0"
             >
               View in LinkedIn
             </a>

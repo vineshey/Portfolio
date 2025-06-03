@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <section id="contact" className="py-16 bg-gray-100 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-8">
         <div className="flex justify-center mb-2 text-4xl">📬</div>
         <motion.h2
           initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-neon"
+              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-neon"
               required
             />
           </div>
@@ -36,7 +36,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-neon"
+              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-neon"
               required
             />
           </div>
@@ -44,7 +44,7 @@ const Contact = () => {
             <label className="block text-sm font-medium mb-1">Message</label>
             <textarea
               name="message"
-              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-neon"
+              className="w-full p-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-neon"
               rows="5"
               required
             ></textarea>
