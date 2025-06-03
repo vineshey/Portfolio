@@ -14,5 +14,3 @@ Welcome to my personal portfolio repository! This project showcases my work, ski
 - Vite
 - Tailwind CSS
 - Vercel (Deployment)
-
-## 📂 Folder Structure
