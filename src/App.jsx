@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
+import InternshipNotebook from "./components/InternshipNotebook";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+          <InternshipNotebook/>
         <Achievements />
         <Certifications />
         <Contact />
